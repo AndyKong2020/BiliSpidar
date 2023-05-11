@@ -110,7 +110,7 @@ class Bilibili_Spider():
             result['now'] = dates[i][1]
             if re.search(title_filter, titles[i]):
                 print(titles[i])
-                data_list.append(result)
+            data_list.append(result)
 
         print('write json to {}'.format(json_path))
         dir_name = osp.dirname(json_path)
